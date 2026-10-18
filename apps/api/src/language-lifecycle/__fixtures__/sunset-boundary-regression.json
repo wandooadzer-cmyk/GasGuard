@@ -1,0 +1,143 @@
+{
+  "policyDigest": "bbd4dbafd876b555d505cb437a6253b8460e26d6c83fd078df85477d09dd1e87",
+  "cases": [
+    {
+      "asOf": "2026-10-31",
+      "previewOptIns": [],
+      "decisions": [
+        {
+          "language": "cairo",
+          "stage": "preview",
+          "action": "skip",
+          "reason": "preview_not_enabled"
+        },
+        {
+          "language": "solidity",
+          "stage": "supported",
+          "action": "analyze",
+          "reason": "supported"
+        },
+        {
+          "language": "vyper",
+          "stage": "supported",
+          "action": "analyze",
+          "reason": "supported"
+        }
+      ],
+      "fingerprint": "e31754a2ddb4ea5d610a2b4001e51bdbc684e5ec853ab4d0acb11dfcb3b205ed"
+    },
+    {
+      "asOf": "2026-11-01",
+      "previewOptIns": [],
+      "decisions": [
+        {
+          "language": "cairo",
+          "stage": "preview",
+          "action": "skip",
+          "reason": "preview_not_enabled"
+        },
+        {
+          "language": "solidity",
+          "stage": "supported",
+          "action": "analyze",
+          "reason": "supported"
+        },
+        {
+          "language": "vyper",
+          "stage": "deprecated",
+          "action": "analyze",
+          "reason": "deprecated",
+          "sunsetAt": "2027-02-01",
+          "replacement": "solidity"
+        }
+      ],
+      "fingerprint": "5371bcc36a0dc6e831caf92476b94bc4ec04f437a020ca46bdfe06c85622314e"
+    },
+    {
+      "asOf": "2027-01-31",
+      "previewOptIns": [],
+      "decisions": [
+        {
+          "language": "cairo",
+          "stage": "preview",
+          "action": "skip",
+          "reason": "preview_not_enabled"
+        },
+        {
+          "language": "solidity",
+          "stage": "supported",
+          "action": "analyze",
+          "reason": "supported"
+        },
+        {
+          "language": "vyper",
+          "stage": "deprecated",
+          "action": "analyze",
+          "reason": "deprecated",
+          "sunsetAt": "2027-02-01",
+          "replacement": "solidity"
+        }
+      ],
+      "fingerprint": "ababddf2161b46f4de9b078edadbc398261085340181ee00ab160eec5a1bbbb5"
+    },
+    {
+      "asOf": "2027-02-01",
+      "previewOptIns": [],
+      "decisions": [
+        {
+          "language": "cairo",
+          "stage": "preview",
+          "action": "skip",
+          "reason": "preview_not_enabled"
+        },
+        {
+          "language": "solidity",
+          "stage": "supported",
+          "action": "analyze",
+          "reason": "supported"
+        },
+        {
+          "language": "vyper",
+          "stage": "retired",
+          "action": "skip",
+          "reason": "retired",
+          "sunsetAt": "2027-02-01",
+          "replacement": "solidity"
+        }
+      ],
+      "fingerprint": "843db2e646eadb6dad760d68001c03bbfbaa39343d70c97e6d55c4146bb3803c"
+    },
+    {
+      "asOf": "2027-02-01",
+      "previewOptIns": ["cairo"],
+      "decisions": [
+        {
+          "language": "cairo",
+          "stage": "preview",
+          "action": "analyze",
+          "reason": "preview_opt_in"
+        },
+        {
+          "language": "solidity",
+          "stage": "supported",
+          "action": "analyze",
+          "reason": "supported"
+        },
+        {
+          "language": "vyper",
+          "stage": "retired",
+          "action": "skip",
+          "reason": "retired",
+          "sunsetAt": "2027-02-01",
+          "replacement": "solidity"
+        }
+      ],
+      "fingerprint": "1a300dbfa24b7ba7a1953b6a65d58a8d4e97e70220cca41a1eb9de6d26a43574"
+    }
+  ],
+  "detection": {
+    "Contracts/Token.SOL": "solidity",
+    "a/b.vy": "vyper",
+    "lib/x.cairo": "cairo"
+  }
+}

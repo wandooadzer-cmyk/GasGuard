@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "languages": [
+    { "language": "cairo", "stage": "preview", "extensions": [".cairo"] },
+    { "language": "solidity", "stage": "supported", "extensions": [".sol"] },
+    {
+      "language": "vyper",
+      "stage": "supported",
+      "extensions": [".vy"],
+      "deprecatedAt": "2026-11-01",
+      "sunsetAt": "2027-02-01",
+      "replacement": "solidity"
+    }
+  ]
+}

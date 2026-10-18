@@ -1,0 +1,30 @@
+{
+  "version": "1.2.0",
+  "languages": [
+    { "language": "cairo", "stage": "preview", "extensions": [".cairo"] },
+    {
+      "language": "javascript",
+      "stage": "retired",
+      "extensions": [".cjs", ".js", ".mjs"],
+      "sunsetAt": "2026-06-30",
+      "replacement": "typescript"
+    },
+    { "language": "move", "stage": "preview", "extensions": [".move"] },
+    { "language": "rust", "stage": "supported", "extensions": [".rs"] },
+    { "language": "solidity", "stage": "supported", "extensions": [".sol"] },
+    { "language": "soroban", "stage": "supported", "extensions": [] },
+    {
+      "language": "typescript",
+      "stage": "supported",
+      "extensions": [".cts", ".mts", ".ts"]
+    },
+    {
+      "language": "vyper",
+      "stage": "deprecated",
+      "extensions": [".vy"],
+      "deprecatedAt": "2026-07-01",
+      "sunsetAt": "2027-01-31",
+      "replacement": "solidity"
+    }
+  ]
+}

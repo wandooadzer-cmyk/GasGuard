@@ -1,0 +1,26 @@
+{
+  "tenantId": "tenant-stellar-dex",
+  "repository": "stellar-dex/amm-monorepo",
+  "commit": "9f3c2a71d4e85b0c6a1f27e3d98b54c0a2e1f6d7",
+  "commitDate": "2026-10-15",
+  "scanId": "scan-amm-9f3c2a71",
+  "files": [
+    "Cargo.toml",
+    "README.md",
+    "bridge/evm/contracts/Bridge.sol",
+    "bridge/evm/contracts/interfaces/IBridge.sol",
+    "bridge/evm/legacy/Vault.vy",
+    "bridge/evm/package.json",
+    "bridge/starknet/src/bridge.cairo",
+    "contracts/amm/Cargo.toml",
+    "contracts/amm/src/lib.rs",
+    "contracts/amm/src/pool.rs",
+    "contracts/amm/src/test.rs",
+    "contracts/token/src/lib.rs",
+    "frontend/src/index.test.ts",
+    "scripts/deploy.ts",
+    "scripts/legacy-deploy.js",
+    "tools/indexer/src/main.rs"
+  ],
+  "sorobanPrefixes": ["contracts/"]
+}

@@ -1,0 +1,38 @@
+{
+  "policyDigest": "87f2c0b5b54cba2ad6ab9318f3232aeafc31d1c0605901c08000f59ba5e165eb",
+  "fingerprint": "c34cb45f82b5c476c87ce338db4e07cf11d5beded43b494af21948240a6b018c",
+  "status": "partial",
+  "analyze": {
+    "bridge/evm/contracts/Bridge.sol": "solidity",
+    "bridge/evm/contracts/interfaces/IBridge.sol": "solidity",
+    "bridge/evm/legacy/Vault.vy": "vyper",
+    "contracts/amm/src/lib.rs": "soroban",
+    "contracts/amm/src/pool.rs": "soroban",
+    "contracts/amm/src/test.rs": "soroban",
+    "contracts/token/src/lib.rs": "soroban",
+    "frontend/src/index.test.ts": "typescript",
+    "scripts/deploy.ts": "typescript",
+    "tools/indexer/src/main.rs": "rust"
+  },
+  "skipped": [
+    {
+      "path": "bridge/starknet/src/bridge.cairo",
+      "language": "cairo",
+      "reason": "preview_not_enabled"
+    },
+    {
+      "path": "scripts/legacy-deploy.js",
+      "language": "javascript",
+      "reason": "retired"
+    }
+  ],
+  "warnings": [
+    {
+      "language": "vyper",
+      "files": 1,
+      "message": "Language \"vyper\" is deprecated and will no longer be analyzed from 2027-01-31. Migrate to \"solidity\".",
+      "sunsetAt": "2027-01-31",
+      "replacement": "solidity"
+    }
+  ]
+}

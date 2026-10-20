@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "feature/cli-flag-deprecation-warnings",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "feature/cli-flag-deprecation-warnings": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "feature/cli-flag-deprecation-warnings",
+    "origin"
+  ]
+}

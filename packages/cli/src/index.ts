@@ -11,8 +11,14 @@ import { policyCommand } from "./commands/policy";
 import { backlogCommand } from "./commands/backlog";
 import { compareCommand } from "./commands/compare";
 import { setCliOptions } from "./output";
+import { checkDeprecatedFlags } from "./deprecation";
+import { attachDeprecationHook } from "./deprecation/integration";
 
 const program = new Command();
+
+// Check for deprecated flags before parsing
+// This runs early to catch flags at the top level
+checkDeprecatedFlags(process.argv);
 
 // Configure CLI
 program
